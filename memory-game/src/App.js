@@ -10,9 +10,14 @@ class App extends Component {
 
   state = {
     images,
+    randomArray: [],
     picked: [],
     score: 0,
     high: 0
+  };
+
+  componentDidMount(){
+    this.randomize();
   };
 
   select = id => {
@@ -20,6 +25,7 @@ class App extends Component {
     if (this.state.picked.indexOf(id) === -1) {
       this.state.picked.push(id);
       this.setState({score: this.state.score + 1}, this.check());
+      this.randomize();
     }
     else {
       this.restart();
@@ -34,8 +40,20 @@ class App extends Component {
     }
   }
 
+  randomize = () => {
+    const newArr = [];
+    let tempArr = this.state.images;
+    for (let i = tempArr.length; i > 0; i--) {
+      const rand = Math.floor(Math.random() * (i));
+      newArr.push(tempArr[rand])
+      tempArr = tempArr.filter(element => newArr.indexOf(element) === -1)
+    }
+    this.setState({randomArray: newArr});
+  }
+
   restart = () => {
     this.setState({score: 0, picked: []})
+    this.randomize();
   }
 
   render() {
@@ -48,7 +66,8 @@ class App extends Component {
           />
         </Header>
         <Main>
-          {this.state.images.map(picture => (
+          {console.log(this.state.randomArray)}
+          {this.state.randomArray.map(picture => (
             <Pictures
               select={this.select}
               id={picture.id}
