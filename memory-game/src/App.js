@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Pictures from "./components/Pictures";
+import images from "./images.json"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    images
+  };
+
+  select = id => {
+    
+  }
+
+  render() {
+    return (
+      <div>
+        <Header/>
+        <Main>
+          {this.state.images.map(picture => (
+            <Pictures
+              select={this.select}
+              id={picture.id}
+              image={picture.image}
+            />
+          ))}
+        </Main>
+      </div>
+    );
+  }
 }
-
 export default App;
