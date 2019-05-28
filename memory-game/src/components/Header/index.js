@@ -1,10 +1,13 @@
 import React from "react";
-import ".style.css";
+// import "./style.css";
 
-function Header() {
-    <div className="row">
-        <h1 className="text-center bg-primary">Memory Game!</h1>
-    </div>
+function Header(props) {
+    return (
+        <div className="row bg-primary text-center">
+            <h1 className="col-md-6">Memory Game!</h1>
+            {props.children}
+        </div>
+    )
 }
 
 export default Header;

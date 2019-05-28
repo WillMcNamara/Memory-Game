@@ -1,8 +1,27 @@
 [
     {
         "id": 1,
-        "image": "url here",
-        "name": "pic1",
+        "image": "https://freepngimg.com/thumb/calvin_and_hobbes/32299-9-calvin-and-hobbes-photos.png",
+        "name": "picture",
+        "selected": false
+    },
+    {
+        "id": 2,
+        "image": "https://freepngimg.com/thumb/calvin_and_hobbes/31830-8-calvin-and-hobbes-transparent-background.png",
+        "name": "picture",
+        "selected": false
+    },
+    {
+        "id": 3,
+        "image": "http://pngriver.com/wp-content/uploads/2018/04/Download-Calvin-And-Hobbes-PNG-Image.png",
+        "name": "picture",
+        "selected": false
+    },
+    {
+        "id": 4,
+        "image": "http://www.pngmart.com/files/4/Calvin-And-Hobbes-PNG-Free-Download.png",
+        "name": "picture",
         "selected": false
     }
 ]
+
