@@ -2,6 +2,7 @@
     {
         "id": 1,
         "image": "url here",
+        "name": "pic1",
         "selected": false
     }
 ]
