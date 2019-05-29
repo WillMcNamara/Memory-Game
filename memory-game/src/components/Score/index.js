@@ -3,12 +3,14 @@ import "./style.css";
 
 function Score(props) {
     return (
-        <div>
-            <div className="col-md-3 score">
-                Score = {props.score}
-            </div>
-            <div className="col-md-3 score">
-                High Score = {props.high}
+        <div className="col-md-6">
+            <div className="row">
+                <h2 className="col-md-6 score">
+                    Score = {props.score}
+                </h2>
+                <h2 className="col-md-6 score">
+                    High Score = {props.high}
+                </h2>
             </div>
         </div>
     )

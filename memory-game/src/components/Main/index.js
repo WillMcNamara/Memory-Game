@@ -4,7 +4,9 @@ import "./style.css";
 function Main(props) {
     return (
         <div className="container">
-            {props.children}
+            <div className="row">
+                {props.children}
+            </div>
         </div>
     )
 }

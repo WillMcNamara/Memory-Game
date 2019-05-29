@@ -22,6 +22,54 @@
         "image": "http://www.pngmart.com/files/4/Calvin-And-Hobbes-PNG-Free-Download.png",
         "name": "picture",
         "selected": false
+    },
+    {
+        "id": 5,
+        "image": "http://www.pngall.com/wp-content/uploads/2016/03/Mickey-Mouse-PNG.png",
+        "name": "mickey",
+        "selected": false
+    },
+    {
+        "id": 6,
+        "image": "http://pngimg.com/uploads/donald_duck/donald_duck_PNG2.png",
+        "name": "donald",
+        "selected": false
+    },
+    {
+        "id": 7,
+        "image": "https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/12/10004809/Disney-Pluto-Free-PNG-Image.png",
+        "name": "goofy",
+        "selected": false
+    },
+    {
+        "id": 8,
+        "image": "https://www.freepngimg.com/thumb/cartoon/9-2-cartoon-png.png",
+        "name": "simba",
+        "selected": false
+    },
+    {
+        "id": 9,
+        "image": "http://pngimg.com/uploads/kim_jong_un/kim_jong_un_PNG16.png",
+        "name": "kim",
+        "selected": false
+    },
+    {
+        "id": 10,
+        "image": "https://i.pinimg.com/originals/d8/9b/3c/d89b3cbe96d8656ccac71ac4cf18c8eb.png",
+        "name": "bill",
+        "selected": false
+    },
+    {
+        "id": 11,
+        "image": "http://pngimg.com/uploads/geaorge_bush/geaorge_bush_PNG18.png",
+        "name": "george",
+        "selected": false
+    },
+    {
+        "id": 12,
+        "image": "http://pluspng.com/img-png/download-happy-person-png-images-transparent-gallery-advertisement-275.png",
+        "name": "generic guy",
+        "selected": false
     }
 ]
 
